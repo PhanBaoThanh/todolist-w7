@@ -1,0 +1,55 @@
+.listItem{
+    display: flex;
+    cursor: default;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 16px;
+    transition: .2s;    
+    margin-bottom: 8px;
+
+    &:hover{
+      color: hsl(210, 22%, 49%);
+      background-color: hsl(210, 36%, 96%);
+    }
+
+    p{
+      max-width: 75%;
+    }
+
+    .listBtn{
+      display: flex;
+      .listBtnItem{
+        margin-right: 8px;
+        padding: 4px 8px;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 4px;
+        transition: .2s;
+        color: #fff;
+        cursor: pointer;
+        &.green{
+          border-color: rgb(2, 142, 2);
+          background-color: rgb(2, 142, 2);
+          &:hover{
+            color: rgb(2, 142, 2);
+          }
+        }
+        &.red{
+          border-color: rgb(159, 1, 1);
+          background-color: rgb(159, 1, 1);
+          &:hover{
+            color: rgb(159, 1, 1);
+          }
+        }
+
+        &:hover{
+          background-color: transparent;
+        }
+      }
+    }
+  }
